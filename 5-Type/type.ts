@@ -29,13 +29,13 @@ function process(value: string | number) {
  */
 
 class Person {
-    id: number;
-    name: string;
+    id!: number;
+    name!: string;
 }
 
 class Dog {
-    id: number;
-    name: string;
+    id!: number;
+    name!: string;
 }
 
 function check(aObject: Person|Dog): void {
@@ -49,7 +49,7 @@ function check(aObject: Person|Dog): void {
  */
 
 // null 許容する
-let data1: string | null = null;
+let data5: string | null = null;
 
 // hogeがnullかundefinedでない時、string型であるので hoge.trim()を実行する
 let hoge: string | null | undefined;
